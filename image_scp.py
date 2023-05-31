@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    url = 'https://www.dkpminus.com/wp-content/uploads/2019/08/?SD'  # Replace with your URL
+    url = 'https://www.example.com'  # Replace with your URL
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'html.parser')
 
