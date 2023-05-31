@@ -21,7 +21,7 @@ Directory Structure
 
 Ensure that your directory structure looks like this:
 
-arduino
+
 
 /open-directory-image-parser
     /templates
