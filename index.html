@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Images</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 10px;
+        }
+        .grid img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        {% for img_url in img_urls %}
+            <div><img src="{{ img_url }}"></div>
+        {% endfor %}
+    </div>
+</body>
+</html>
